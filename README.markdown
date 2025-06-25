@@ -1,13 +1,13 @@
-# Data-Analysis-Projects 🚀
+# Data-Analysis-Projects 
 
 Welcome to the **Data-Analysis-Projects** repository! This is your go-to hub for a curated collection of beginner to intermediate data analysis projects using Python. Dive into real-world datasets, uncover practical insights, and master data storytelling with clean, visual flair! 🌟
 
-## What’s Inside? 📊
+## What’s Inside? 
 - **Projects**: Hands-on analyses like the *Netflix Show Popularity Analysis* to kickstart your data journey.
 - **Tools**: Powered by Python, with libraries like Pandas, Matplotlib, and Seaborn for that slick visualization.
 - **License**: MIT License - free to use, modify, and share! 🎉
 
-## Getting Started 🛠️
+## Getting Started 🛠
 1. **Clone the Repo**:
    ```bash
    git clone https://github.com/Arnaitheach/Data-Analysis-Projects.git
@@ -21,22 +21,22 @@ Welcome to the **Data-Analysis-Projects** repository! This is your go-to hub for
    (Note: Create a `requirements.txt` file with your project dependencies!)
 3. **Explore Projects**: Check the `Projects` folder and run the scripts to see the magic unfold!
 
-## Featured Projects 🌈
+## Featured Projects 
 - **Netflix Show Popularity Analysis**: Analyze trends and popularity scores from Netflix data.
 - More to come! Suggest your ideas by opening an issue or submitting a pull request.
 
-## Contributing 🤝
+## Contributing 
 Love data? Want to contribute? Awesome!  
 - Fork the repo.
 - Create a new branch (`git checkout -b feature-cool-analysis`).
 - Commit your changes (`git commit -m "Add cool analysis"`).
 - Push and open a pull request. Let’s make data fun together!
 
-## Contact 📧
+## Contact 
 Got questions or ideas? Reach out to [Arnaitheach](https://github.com/Arnaitheach) or drop an issue here. Let’s chat about data adventures!
 
-## Acknowledgments 🙌
+## Acknowledgments 
 - Inspired by the data community and real-world problem-solving.
 - Thanks to open datasets that fuel these projects!
 
-Happy analyzing! 📊🔍
+Happy analyzing! 
