@@ -1,61 +1,73 @@
-# NBA Player Salary Analysis and Prediction
+# NBA Player Data Analysis Dashboard
 
-This project analyzes and predicts NBA player salaries based on physical attributes and categorical features. It uses **data visualization**, **correlation analysis**, **clustering**, and **linear regression modeling**.
+This project explores player data from the NBA using Python, featuring interactive visualizations and unsupervised machine learning techniques. The analysis aims to uncover patterns in player salaries, physical attributes, and college background, as well as segment players into meaningful clusters.
 
-## Project Overview
+## Dataset
 
-The project is developed in **Google Colab** and includes:
+- Source: `nba.csv` (457 NBA players)
+- Features include: Name, Team, Position, Age, Height, Weight, College, and Salary
 
-- Exploratory Data Analysis (EDA)
-- Correlation heatmap for numeric features
-- Clustering players based on physical attributes
-- Predictive modeling using Linear Regression
-- One-hot encoding of categorical variables (e.g., Position)
+## Key Objectives
 
-## Features Used
+- Clean and preprocess the dataset for analysis
+- Visualize salary distributions, positional trends, and college background
+- Explore physical attributes (height, weight) in relation to salary
+- Segment players using KMeans clustering
+- Build an interactive dashboard using Plotly and ipywidgets
 
-The following features are considered for modeling:
-
-- Height (in feet)
-- Age
-- Weight
-- Position (categorical)
-- Salary (target variable)
-
-## Files
-
-- `NBA_Salary_Analysis.ipynb`: Main notebook with analysis and model training
-- Dataset loaded from CSV (structured with player data including physical stats, position, and salary)
-
-## Technologies Used
+## Tools and Libraries
 
 - Python 3
-- Google Colab
 - Pandas
-- NumPy
-- Seaborn & Matplotlib (for visualization)
-- scikit-learn (for preprocessing, clustering, regression)
+- Plotly (plotly.graph_objects, plotly.subplots)
+- Scikit-learn (KMeans)
+- ipywidgets
+- Google Colab / Jupyter Notebook
 
-## Key Methods
+## Highlights
 
-- `sns.heatmap()`: Correlation visualization
-- `KMeans()`: Clustering players by height and weight
-- `LinearRegression()`: Predicting salary using age, height, and position
-- `Pipeline`: Combining preprocessing and modeling
-- `OneHotEncoder`: Encoding categorical data
+- Missing values in `Salary` and `College` handled using imputation
+- `Height` column converted from string (e.g., "6-7") to numeric feet
+- Interactive dashboard featuring six plots:
+  - Salary distribution
+  - Average salary by position
+  - Average salary by college background
+  - Age vs. Salary bubble chart
+  - Salary by KMeans cluster
+  - Height vs. Weight scatter plot (cluster-colored)
+
+## Clustering Insight
+
+Using KMeans clustering on age, height, weight, and salary, players were grouped into three clusters:
+
+- Cluster 0: Younger players with lower salaries and average physical profiles
+- Cluster 1: Taller, heavier players with moderate salaries
+- Cluster 2: Older, higher-paid players — often veterans or stars
+
+These clusters help identify player archetypes beyond traditional positions.
+
+## Known Limitations
+
+- ipywidgets may not render correctly in Google Colab; full interactivity is best experienced in a local Jupyter environment
+- Salary data may be from a single season and doesn't reflect contract length or bonuses
+- The "Unknown" college category includes international players and missing values
 
 ## How to Use
 
-1. Open the notebook in [Google Colab](https://colab.research.google.com/drive/1dSxgp_qNHfX5iotYYaLG7XSYUD4AiTtP).
-2. Run the cells sequentially.
-3. Modify features or model parameters as needed.
+1. Clone this repository
+2. Open the notebook in Jupyter or Colab
+3. Ensure required packages are installed
+4. Adjust sliders and dropdowns to explore the data
 
-## Future Improvements
+**Note:** For best widget interactivity, running the notebook in a local Jupyter environment is recommended.
 
-- Include player performance statistics (e.g., points per game)
-- Try different regression models (Random Forest, Ridge, etc.)
-- Deploy as a web app using Streamlit or Flask
+## Future Work
 
-## Contact
+- Incorporate performance statistics (e.g., points per game, assists)
+- Include experience level, draft position, or contract details
+- Add regression models to better predict player salary
+- Explore web deployment using Streamlit or Dash
 
-For questions or collaboration, feel free to open an issue or reach out via GitHub.
+## License
+
+This project is for educational and analytical purposes.
